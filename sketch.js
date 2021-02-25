@@ -3,7 +3,7 @@ const World= Matter.World;
 const Bodies = Matter.Bodies;
 
 var engine, world;
-var box,ground,g2,g3,g4
+var box,ground,g2,g3,g4,g5
 
 function setup() {
   createCanvas(1500,800);
@@ -15,7 +15,7 @@ function setup() {
   var order1={
     restitution:2
   }
-   box=Bodies.rectangle(,200,50,50,order1)
+   box=Bodies.rectangle(200,50,50,order1)
   World.add(world,box)
   var order={
     isStatic:true
@@ -30,6 +30,8 @@ function setup() {
   World.add(world,g3)
   g4=Bodies.rectangle(1250,750,300,20,order)
 World.add(world,g4)
+g5=Bodies.rectangle(100,750,300,20,order)
+World.add(world,g5)
 
   
  
